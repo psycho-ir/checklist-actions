@@ -9,10 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ctx: ${{ toJson(github) }}
-      e: ${{github.event}}
-      x: ${{github.context}}
-      issue: ${{github.context.issue}}
-      payload: ${{github.context.issue.number}}
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
