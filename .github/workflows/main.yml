@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       issue: ${{github.context.payload.issue}}
+      payload: ${{github.context.payload}}
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
