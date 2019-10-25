@@ -1,7 +1,10 @@
 name: CI
 
 on: 
-  issues:
+  issues: 
+    types: ["opened"]
+  issue_comment:
+
   
 
 jobs:
